@@ -54,7 +54,7 @@
             IsItemClickEnabled="false">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Grid HorizontalAlignment="Left" Width="150" Height="200">
+                    <Grid HorizontalAlignment="Left" Width="150" Height="190">
                         <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}">
                             <Image Source="{Binding riderPhoto}" Height="150" Width="150" AutomationProperties.Name="{Binding Title}"/>
                         </Border>
@@ -66,7 +66,7 @@
             </GridView.ItemTemplate>
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="8" Width="auto" RenderTransformOrigin="0.442,0.492" />
+                    <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="10" Width="auto" RenderTransformOrigin="0.442,0.492" />
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>

@@ -53,8 +53,24 @@ namespace WorldTourTeams {
             try {
                 response = await client.GetAsync("http://cqranking.com/men/asp/gen/team_photos.asp?year=2014&teamcode=" + team.teamAbbreviation.ToLower());
                 result = await response.Content.ReadAsStreamAsync();
+                parsedResult = ParseHtmlResponse(result, parsedResult);
+
+                string[] lines = parsedResult.Split('\n');
+                int i;
+
+                for (i = 0; i < lines.Length; i++)
+                {
+                    if (lines[i].Contains("img src='../../images/Riders/"))
+                    {
+                        break;
+                    }
+                }
+
+
+                ParseRiderInfo(lines, i);
+                teamView.ItemsSource = teamRoster;       
             } catch (Exception) {
-                var dialog = new Windows.UI.Popups.MessageDialog("Tem de estar conetado à internet para correr esta app");
+                var dialog = new Windows.UI.Popups.MessageDialog("You must be connected to the internet to use this app");
 
 
                 dialog.Commands.Add(new UICommand("Close", new UICommandInvokedHandler(this.CloseApp)));
@@ -63,21 +79,9 @@ namespace WorldTourTeams {
                 dialog.ShowAsync();
             }
 
-            parsedResult = ParseHtmlResponse(result, parsedResult);
-
-            string[] lines = parsedResult.Split('\n');
-            int i;
-
-            for (i = 0; i < lines.Length; i++) {
-                if (lines[i].Contains("img src='../../images/Riders/")) {
-                    break;
-                }
-            }
 
 
-            ParseRiderInfo(lines, i);
-            teamView.ItemsSource = teamRoster;
-        }
+                    }
 
         private static string ParseHtmlResponse(Stream result, string parsedResult) {
             StringBuilder sb = new StringBuilder();
