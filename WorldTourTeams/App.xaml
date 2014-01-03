@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="WorldTourTeams.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorldTourTeams"
+    xmlns:localData="using:WorldTourTeams.Data">
+
+    <Application.Resources>
+
+        <!-- Application-specific resources -->
+
+        <x:String x:Key="AppName">UCI World Tour 2014 Teams</x:String>
+
+    </Application.Resources>
+</Application>
