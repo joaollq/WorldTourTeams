@@ -358,5 +358,11 @@
     <MainPackageIdentityName>38536joaollq.HorriodosComboios</MainPackageIdentityName>
     <MainPackageIdentityName>38536joaollq.InfoTrfego</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/a6cf01ad-9e9b-4c64-9f1c-6cc85b8483fd" />
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/a6cf01ad-9e9b-4c64-9f1c-6cc85b8483fd">
+    <PackageInfo>
+      <OsMinVersion>6.3.0.0</OsMinVersion>
+      <PackageArchitecture>neutral</PackageArchitecture>
+      <PackageMaxArchitectureVersion>1.1.0.1</PackageMaxArchitectureVersion>
+    </PackageInfo>
+  </PackageInfoList>
 </StoreAssociation>

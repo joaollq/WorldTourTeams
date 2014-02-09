@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="38536joaollq.UciWorldTour2014Teams" Publisher="CN=4F6CA668-33E9-43C2-A922-9801288D94FA" Version="1.1.0.1" />
+  <Identity Name="38536joaollq.UciWorldTour2014Teams" Publisher="CN=4F6CA668-33E9-43C2-A922-9801288D94FA" Version="1.1.0.4" />
   <Properties>
     <DisplayName>Uci World Tour 2014 Teams</DisplayName>
     <PublisherDisplayName>joaollq</PublisherDisplayName>

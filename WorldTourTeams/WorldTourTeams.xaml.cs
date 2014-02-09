@@ -1,4 +1,5 @@
-﻿using WorldTourTeams.Common;
+﻿
+using WorldTourTeams.Common;
 using WorldTourTeams.Data;
 using System;
 using System.Collections.Generic;
@@ -59,8 +60,8 @@ namespace WorldTourTeams
 
         private void InitializeTeams() {
             teams = new List<TeamInfo>();
-            String[] abbreviations = {"ALM","AST", "BEL", "BMC", "CAN", "FDJ", "GRS", "KAT", "LAM", "LTB", "MOV", "OPQ", "OGE", "ARG", "EUC", "SKY", "TSB", "TFR"};
-            String[] names = { "Ag2r La Mondiale", "Astana Pro Team", "Belkin Pro Cycling Team", "BMC Racing Team", "Cannondale Pro Cycling", "FDJ.fr", "Garmin - Sharp", "Katusha Team", "Lampre - Merida", "Lotto - Belisol", "Movistar Team","OmegaPharma - Quick Step Cycling Team", "Orica - GreenEDGE", "Team Argos - Shimano", "Team Europcar", "Team Sky", "Team Tinkoff - Saxo", "Trek Factory Racing" };
+            String[] abbreviations = {"ALM","AST", "BEL", "BMC", "CAN", "FDJ", "GRS", "KAT", "LAM", "LTB", "MOV", "OPQ", "OGE", "EUC", "GIA", "SKY", "TCS", "TFR"};
+            String[] names = { "Ag2r La Mondiale", "Astana Pro Team", "Belkin Pro Cycling Team", "BMC Racing Team", "Cannondale Pro Cycling", "FDJ.fr", "Garmin - Sharp", "Katusha Team", "Lampre - Merida", "Lotto - Belisol", "Movistar Team","OmegaPharma - Quick Step Cycling Team", "Orica - GreenEDGE", "Team Europcar", "Team Giant - Shimano", "Team Sky", "Team Tinkoff - Saxo", "Trek Factory Racing" };
 
             for (int i = 0; i < abbreviations.Length; i++) {
                 teams.Add(new TeamInfo(names[i], "http://cqranking.com/men/images/Teams/2014/" + abbreviations[i] + ".gif", abbreviations[i]));
